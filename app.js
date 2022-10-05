@@ -32,6 +32,8 @@ app.use(helmet())
 app.use(cors())
 app.use(xss())
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
   res.send('Hello Sleep App!')
 })

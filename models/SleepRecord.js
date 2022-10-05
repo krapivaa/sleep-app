@@ -13,8 +13,8 @@ const SleepRecordSchema = new mongoose.Schema(
     },
     result: {
       type: String,
-      enum: ['slept very well', 'good sleep', 'bad sleep', 'didn not sleep at all'],
-      default: 'good sleep',
+      enum: ['well', 'good', 'bad', 'no'],
+      default: 'good',
     },
     createdBy: {
       type: mongoose.Types.ObjectId,
