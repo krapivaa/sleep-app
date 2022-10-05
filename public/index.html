@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Sleep App</title>
+</head>
+
+<body>
+    <h1>Do you sleep enough?</h1>
+    <h2>Let's check this!</h2>
+    <button type="button" id="signoff" style="display:none;">Sign off</button>
+    <hr>
+    <p id="message"></p>
+    <hr>
+    <div id="login-register" style="display:none;">
+        <button type="button" id="login">Login</button>
+        <button type="button" id="register">Register</button>
+    </div>
+    <div id="login-div" style="display:none;">
+        <form>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+            </div>
+            <button type="button" id="login-button">Login</button>
+            <button type="button" id="login-cancel">Cancel</button>
+        </form>
+    </div>
+    <div id="register-div" style="display:none;">
+        <form>
+            <div>
+                <label for="name">Your name:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email1">Your email:</label>
+                <input type="email" id="email1">
+            </div>
+            <div>
+                <label for="password1">Password:</label>
+                <input type="password" id="password1">
+            </div>
+            <div>
+                <label for="password2">Verify your password:</label>
+                <input type="password" id="password2">
+            </div>
+            <button type="button" id="register-button">Register</button>
+            <button type="button" id="register-cancel">Cancel</button>
+        </form>
+    </div>
+    <div id="sleepRecords" style="display:none;">
+        <p id="sleepRecords-message"></p>
+        <table id="sleepRecords-table" style="display:none;">
+            <tr id="sleepRecords-table-header">
+                <th>Date</th>
+                <th>Time</th>
+                <th>Result</th>
+                <th colspan="2"></th>
+            </tr>
+        </table>
+        <button type="button" id="add-sleepRecord">New Sleep Record</button>
+    </div>
+    <div id="edit-sleepRecord" style="display:none;">
+        <form>
+            <div>
+                <label for="date">Date:</label>
+                <input type="text" id="date">
+            </div>
+            <div>
+                <label for="time">Time:</label>
+                <input type="text" id="time">
+            </div>
+            <div>
+                <label for="result">Result:</label>
+                <select id="result">
+                    <option value="well">Slept very well</option>
+                    <option value="good">Good sleep</option>
+                    <option value="bad">Bad Sleep</option>
+                    <option value="no">Did not sleep at all</option>
+                </select>
+            </div>
+            <button type="button" id="adding-sleepRecord">Add</button>
+            <button type="button" id="edit-cancel">Cancel</button>
+        </form>
+    </div>
+    <script src="./sleepRecord.js"></script>
+</body>
+</html>
